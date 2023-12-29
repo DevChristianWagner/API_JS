@@ -16,8 +16,8 @@ import alunoRoutes from './routes/alunoRoutes';
 import pictureRoutes from './routes/pictureRoutes';
 
 const whiteList = [
-  'https://react2.otaviomiranda.com.br/',
-  'http://localhost:3000', 
+  'http://localhost:3000',
+  'https://www.wikipedia.org/',
 ];
 
 const corsOptions = {
