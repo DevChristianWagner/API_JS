@@ -17,12 +17,10 @@ import pictureRoutes from './routes/pictureRoutes';
 
 const whiteList = [
   'http://localhost:3000',
-  'https://www.wikipedia.org/',
-  'wikipedia.org',
 ];
 
 const corsOptions = {
-  origin(origin, callback) {
+  origin: function(origin, callback) {
     if (whiteList.indexOf(origin) !== -1 || !origin) {
       callback(null, true);
     } else {
