@@ -80,7 +80,7 @@ class AlunoController {
         });
       }
 
-      await aluno.destroy;
+      await aluno.destroy();
       return res.json({
         deleted: true,
       });
